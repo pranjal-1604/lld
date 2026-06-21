@@ -1,4 +1,15 @@
 package DecoratorDesignPattern.ConcreteCoffeeTypes;
 
-public class Cappuchino {
+import DecoratorDesignPattern.Coffee;
+
+public class Cappuchino implements Coffee {
+    @Override
+    public String getDescription() {
+        return "Cappuchino";
+    }
+
+    @Override
+    public double cost() {
+        return 3.00;
+    }
 }

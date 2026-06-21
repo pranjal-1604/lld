@@ -3,7 +3,7 @@ package CompositeDesignPattern;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompositeClass implements SmartComponent{
+public class CompositeSmartComponent implements SmartComponent{
     List<SmartComponent> components = new ArrayList<>();
 
     void addComponents(SmartComponent component){
@@ -24,7 +24,7 @@ public class CompositeClass implements SmartComponent{
     @Override
     public void turnOff() {
       for(SmartComponent component:components){
-          component.turnOn();
+          component.turnOff();
       }
     }
 }

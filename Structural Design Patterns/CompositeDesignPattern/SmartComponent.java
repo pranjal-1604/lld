@@ -1,6 +1,6 @@
 package CompositeDesignPattern;
 
-public interface SmartHomeController {
+public interface SmartComponent {
     void turnOn();
     void turnOff();
 }
